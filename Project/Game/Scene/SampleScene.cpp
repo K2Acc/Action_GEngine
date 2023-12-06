@@ -85,7 +85,8 @@ void SampleScene::Update()
 	//デバックカメラ
 	if(isDebugCamera){
 		debugCamera->Update();
-		camera->SetWorld(debugCamera->GetWorld());
+		//camera->SetWorld(debugCamera->GetWorld());
+		camera->Update(debugCamera->GetWorld());
 	}
 #endif // _DEBUG
 
