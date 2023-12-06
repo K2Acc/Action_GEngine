@@ -105,7 +105,7 @@ protected:
 	
 	//作成
 	Input* input = nullptr;
-	Camera* camera = nullptr;
+	//Camera* camera = nullptr;
 
 	//借り物
 	//シーンマネージャー
@@ -130,19 +130,5 @@ protected:
 
 	//描画停止
 	bool isDrawStop = false;
-
-	//画像
-	BaseSprites* sp = nullptr;
-
-	//オブジェクト
-	Action* player = nullptr;
-
-	//GPUパーティクル
-	GPUParticleManager* particle = nullptr;
-	WorldTransform world;
-
-	//json
-	LevelData* levelData = nullptr;
-	std::vector<BaseObjObject*>objects;
 };
 

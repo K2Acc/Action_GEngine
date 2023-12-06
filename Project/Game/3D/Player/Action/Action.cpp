@@ -40,11 +40,7 @@ void Action::Update(Camera *camera)
 void Action::Rotation()
 {
 	//回転
-	//解法1
-	/*world_.rotation.y = atan2(moveValue.x, moveValue.z);
-	XMMATRIX mat = XMMatrixRotationY(-world_.rotation.y);
-	Vector3 velocityZ = TransformNormal(moveValue,mat);
-	world_.rotation.x = atan2(-velocityZ.y, velocityZ.z);*/
+	if(moveValue == Vector3{0,0,0}) return;
 	//解法2
 	world_.rotation.y = std::atan2(moveValue.x, moveValue.z);
 	Vector3 velocityXZ = Vector3{moveValue.x, 0, moveValue.z};
@@ -64,7 +60,7 @@ void Action::Movement()
 	XMMATRIX matRot;
 	matRot = XMMatrixIdentity();
 	matRot *= XMMatrixRotationZ(camera_->GetWorld().rotation.z);
-	matRot *= XMMatrixRotationX(camera_->GetWorld().rotation.x);
+	matRot *= XMMatrixRotationX(0);
 	matRot *= XMMatrixRotationY(camera_->GetWorld().rotation.y);
 	moveValue = TransformNormal(moveValue, matRot);
 

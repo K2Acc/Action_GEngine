@@ -3,6 +3,10 @@
 #include "AudioUtility.h"
 #include "TextureUtility.h"
 
+
+#include "../scene/SampleScene.h"
+
+
 Application* Application::app = nullptr;
 
 using namespace std;
@@ -102,7 +106,7 @@ void Application::Initialize()
 #endif // _DEBUG
 
 	sceneManager = SceneManager::GetInstance();
-	BaseScene* scene = new BaseScene(dxCommon, window);
+	BaseScene* scene = new SampleScene(dxCommon, window);
 
 #ifdef _DEBUG
 	scene->SetDebugText(debugText);

@@ -465,6 +465,9 @@
     <ClCompile Include="Engine\loader\LevelLoader.cpp">
       <Filter>ソース ファイル\Engine\Loader</Filter>
     </ClCompile>
+    <ClCompile Include="Game\Scene\SampleScene.cpp">
+      <Filter>ソース ファイル\Game\Scene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Engine\input\Input.h">
@@ -634,6 +637,9 @@
     </ClInclude>
     <ClInclude Include="Engine\loader\LevelLoader.h">
       <Filter>ヘッダー ファイル\Engine\Loader</Filter>
+    </ClInclude>
+    <ClInclude Include="Game\Scene\SampleScene.h">
+      <Filter>ヘッダー ファイル\Game\Scene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

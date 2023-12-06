@@ -206,6 +206,7 @@
     <ClCompile Include="Engine\scene\base\BaseScene.cpp" />
     <ClCompile Include="Engine\scene\system\SceneManager.cpp" />
     <ClCompile Include="Game\3D\Player\Action\Action.cpp" />
+    <ClCompile Include="Game\Scene\SampleScene.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -262,6 +263,7 @@
     <ClInclude Include="Engine\scene\base\BaseScene.h" />
     <ClInclude Include="Engine\scene\system\SceneManager.h" />
     <ClInclude Include="Game\3D\Player\Action\Action.h" />
+    <ClInclude Include="Game\Scene\SampleScene.h" />
     <ClInclude Include="Game\Utility\AudioUtility.h" />
     <ClInclude Include="Game\Utility\TextureUtility.h" />
     <ClInclude Include="resource.h" />
